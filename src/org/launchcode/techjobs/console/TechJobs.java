@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import static org.launchcode.techjobs.console.JobData.findByValue;
+
 
 /**
  * Created by LaunchCode
@@ -129,7 +129,5 @@ public class TechJobs {
             System.out.println("no results found");
         }
     }
-//    public static searchAllColumns(String keyword){
-//
-//    }
+
 }
