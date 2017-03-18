@@ -131,13 +131,13 @@ public class JobData {
         }
     }
     public static ArrayList<HashMap<String, String>> findByValue(String value){
-        String newValue = value.toLowerCase();
+//        String newValue = value.toLowerCase();
         loadData();
         ArrayList<HashMap<String, String>>jobs=new ArrayList<>();
         for (HashMap<String, String> row : allJobs) {
-            for (Map.Entry result :row.entrySet()) {
+            for (String detail :row.values()) {
 //                  if (newValue.equals(result.getValue().toString().toLowerCase())) {
-                if (StringUtils.containsIgnoreCase(value, result.getValue().toString())) {
+                if (StringUtils.containsIgnoreCase(detail, value)) {
                     jobs.add(row);
                     break;
 
